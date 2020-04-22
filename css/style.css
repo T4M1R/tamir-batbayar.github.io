@@ -1,0 +1,53 @@
+body {
+    background-color: #333;
+    padding: 0px, 0px;
+    margin: 0px, 0px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    line-height: 1.5em;
+}
+
+img.avatar {
+    width: 300px;
+}
+
+h1, h2, h3 {
+    color: cornflowerblue;
+}
+
+a {
+    color: rgb(78, 119, 133);
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color: aliceblue;
+}
+
+span {
+    color: burlywood;
+}
+
+li a, li a:visited{
+    color: red;
+    text-decoration: none;
+}
+
+p::first-letter{
+    font-size: 1.5em;
+}
+
+ul li {
+    list-style-type:none;
+}
+
+ol ul {
+    display: none;
+}
+
+ol li:hover > ul {
+    display: block;
+}
