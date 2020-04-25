@@ -140,3 +140,20 @@ nav a:hover{
     border-radius: 4px;    
     margin-left: 15px; 
 }
+
+.btn-default{
+    margin-left: 10px;
+    margin-top: -7px;
+    padding: 10px 15px;
+    border-radius: 4px;    
+    color: #333;
+    border: 1px solid #13487c;
+    position: fixed;
+    right: 20px;
+}
+
+.greeting{
+    text-align: justify;
+    position: fixed;
+    right: 120px;
+}
