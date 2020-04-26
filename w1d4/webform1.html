@@ -10,7 +10,7 @@
     <div class="container">
        <section>
             <h1>Web Form 1</h1>
-            <form action="/some_url" method="POST">
+            <form method="POST" id="loginForm" onsubmit="event.preventDefault(); formSubmit(this);">
                 <div class="input text">                    
                     <label for="email">Email address</label>
                     <input type="email" id="email" name="email" placeholder="Enter email" required/>
@@ -34,6 +34,12 @@
                     <input type="submit" value="Submit">
                 </div>
             </form>
+            <div class="submited-data">
+                <h3>Submited Data</h3>
+                <div id="result">
+
+                </div>
+            </div>
        </section>
        <footer>
             <div class="row">
@@ -52,5 +58,7 @@
             </div>
         </footer>
     </div>
+
+    <script src="../scripts/w1d5_form.js"></script>
 </body>
 </html>
