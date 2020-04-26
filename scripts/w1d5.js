@@ -158,3 +158,36 @@ function printFibo(n,a,b){
 
 console.log(printFibo(1, 0, 1));
 console.log(printFibo(2, 0, 1));
+
+
+//Task 15
+function showClock(){
+    let id = "clock";
+    let date = new Date;
+    let year = date.getFullYear();
+    let month = date.getMonth();
+    let months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
+    let d = date.getDate();
+    let day = date.getDay();
+    let days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+    let h = date.getHours();
+    if(h<10)
+    {
+            h = "0"+h;
+    }
+    let m = date.getMinutes();
+    if(m<10)
+    {
+            m = "0"+m;
+    }
+    let s = date.getSeconds();
+    if(s<10)
+    {
+            s = "0"+s;
+    }
+    let result = ''+days[day]+' '+months[month]+' '+d+' '+year+' '+h+':'+m+':'+s;
+    document.getElementById(id).innerHTML = result;
+    setTimeout('showClock();','1000');
+    return true;
+}
+window.onload = showClock();
