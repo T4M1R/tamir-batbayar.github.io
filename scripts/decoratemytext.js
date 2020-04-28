@@ -72,7 +72,7 @@ function convertStr(str){
         console.log(str);
     }
     else if(isNaN(str.charAt(0))){ 
-        let tmp = str.charAt(0);
+        const tmp = str.charAt(0);
         str = str.substring(1);
         str = str + tmp + "-ay ";
     }
