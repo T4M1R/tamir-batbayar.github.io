@@ -1,10 +1,16 @@
-/*jshint esversion: 6 */
+/*esversion: 6 */
 window.addEventListener('load', () => {
     "use strict";
     
+    let timerObj;
+
     document.getElementById("btn").addEventListener("click",  function(){
         //alert("Hello, world!");     
-        setInterval(increaseFontSize, 500);        
+        timerObj = setInterval(increaseFontSize, 500);        
+    });
+
+    document.getElementById("btnCancel").addEventListener("click", function(){
+        clearInterval(timerObj);
     });
 
 
