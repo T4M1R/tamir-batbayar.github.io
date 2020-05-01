@@ -54,3 +54,24 @@ Person.prototype.toString = function(){
 const p2 = new Person("Peter","1985-11-10");
 console.log("#Task 3:");
 console.log(p2.toString()); 
+
+/* Task 3 with CLASS as bonus point mentioned
+*/
+class Person {
+    constructor(newName, newDob) {
+        this.name = newName;
+        this.dateOfBirth = newDob;
+    }
+    getName() {
+        return this.name;
+    }
+    setName(newName) {
+        this.name = newName;
+    }
+    toString() {
+        return `Name: ${this.name}, dateOfBirth: ${this.dateOfBirth}`;
+    }
+}
+const p2 = new Person("Peter","1985-11-10");
+console.log("#Task 3:");
+console.log(p2.toString()); 
